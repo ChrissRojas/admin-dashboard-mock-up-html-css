@@ -19,9 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+	
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -29,21 +27,57 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    display:flex;
+    display: grid;
+	grid-template-columns: minmax(300px,500px) minmax(1420px,1620px);
+	grid-template-rows: 100vh;
 	line-height: 1;
 }
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+.navigation-container, .nav-heading{
+	display:flex;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+.navigation-container {
+	flex-direction: column;
+	gap: 150px;
+	color: #FFFFDD;
+	padding: 20px;
+	background-color: #61A3BA;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+
+
+.nav-heading{
+	flex-direction: row;
+	margin: 0 auto;
 }
+.nav-heading h1{
+	margin: auto 0;
+}
+
+.nav-links{margin:0 auto}
+.nav-links li{
+	margin: 10px;
+}
+
+.nav-links li:nth-child(6){
+	margin-bottom: 60px;
+}
+.material-symbols-outlined {
+	
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+
+}
+
+span.size-48{
+	font-size: 48px;
+}
+
+

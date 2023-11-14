@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     display: grid;
-	grid-template-columns: minmax(300px,500px) minmax(1420px,1620px);
+	grid-template-columns: minmax(300px,400px) minmax(600px,1620px);
 	grid-template-rows: 100vh;
 	line-height: 1;
 }
@@ -58,7 +58,8 @@ ol, ul {
 	margin: auto 0;
 }
 
-.nav-links{margin:0 auto}
+.nav-links{margin:0 auto;}
+
 .nav-links li{
 	margin: 10px;
 }
@@ -80,4 +81,49 @@ span.size-48{
 	font-size: 48px;
 }
 
+span.size-20{
+	font-size: 20px;
+}
+
+span.size-30{
+	font-size:30px;
+}
+
+span.size-40{
+	font-size: 40px;
+}
+
+.search-bar-container{
+	display: grid;
+	height: 150px;
+	max-width: 100%;
+	align-items: center;
+	grid-template-columns: minmax(50px,50px) minmax(200px,2fr) repeat(3,minmax(50px,0.5fr));
+	row-gap: 10px;
+	grid-template-rows: repeat(2,50px);
+}
+
+#search-f{
+	background-color:#D2DE32;
+	border-radius:40px;
+	border-style:none;
+	height: 20px;
+}
+
+.search-bar-container button{
+	border-radius: 40px;
+	height: 40px;
+	width: 100px;
+	border-style:none;
+	background-color: #D2DE32;
+}
+.body-container{
+	background-color: #ffffff;
+	color: #595f52;
+	padding: 20px;
+}
+
+#search, #check, #notif{
+	justify-self: end;
+}
 
